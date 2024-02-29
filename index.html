@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="sty.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    .app-wrap {
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+      background-color: #007bff;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .search-box {
+      width: calc(100% - 40px);
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    .search-icon {
+      float: right;
+      margin-top: 11px;
+      margin-right: 10px;
+      color: #fff;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .location {
+      text-align: center;
+    }
+
+    .city {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .date {
+      font-size: 16px;
+      color: #777;
+    }
+
+    .current {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .temp {
+      font-size: 48px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .temp span {
+      font-size: 24px;
+    }
+
+    .weather {
+      font-size: 24px;
+      color: #333;
+    }
+
+    .hi-low {
+      font-size: 18px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="app-wrap">
+    <header>
+      <input type="text" autocomplete="off" class="search-box" placeholder="&#xF002; Search for a city..." style="font-family:Arial, FontAwesome" />
+      <i class="fas fa-search search-icon"></i>
+    </header>
+    <main>
+      <section class="location">
+        <div class="city">London</div>
+        <div class="date"></div>
+      </section>
+      <div class="current">
+        <div class="temp">15<span>°c</span></div>
+        <div class="weather">Sunny</div>
+        <div class="hi-low">13°c / 16°c</div>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
